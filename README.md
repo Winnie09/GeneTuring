@@ -57,6 +57,19 @@ To build this GPT, we created an **Action to integrate the NCBI BLAST API**, ena
 - Check query status
 - Retrieve BLAST results programmatically
 
+
+**What it does**:
+
+It integrates the NCBI BLAST API into a GPT interface. This means it can:
+
+- Accept DNA sequence alignment queries
+
+- Submit them to the NCBI BLAST service
+
+- Retrieve and explain the results
+
+- Decide when to use external APIs instead of relying on internal training data
+
 The concept of integrating external APIs follows the same approach described in **GeneGPT**:  
 Jin, Qiao, et al. _Bioinformatics_ 40.2 (2024): btae075.
 
