@@ -50,7 +50,7 @@ This dataset enables granular comparison of model behavior across a wide range o
 
 **We developed a GPT-based tool, [Genetic Alignment BLAST](https://chatgpt.com/g/g-67c52efdc210819190a9532f264ec9c0-genetic-alignment-blast), using OpenAI’s GPT Builder platform.**
 
-This app was created to **demonstrate the feasibility of using API-driven execution** to tackle sequence alignment questions more effectively. It can recognize when to call external genomic databases (e.g., the **National Center for Biotechnology Information (NCBI)** database) rather than attempting to generate answers purely from its training data [Jin et al., 2024](https://doi.org/10.1093/bioinformatics/btae075).
+This app was created to **demonstrate the feasibility of using API-driven execution** to tackle sequence alignment questions more effectively. It can recognize when to call external genomic databases (e.g., the **National Center for Biotechnology Information (NCBI)** database) rather than attempting to generate answers purely from its training data.
 
 To build this GPT, we created an **Action to integrate the NCBI BLAST API**, enabling the GPT to:
 - Submit BLAST queries
@@ -70,8 +70,7 @@ It integrates the NCBI BLAST API into a GPT interface. This means it can:
 
 - Decide when to use external APIs instead of relying on internal training data
 
-The concept of integrating external APIs follows the same approach described in **GeneGPT**:  
-Jin, Qiao, et al. _Bioinformatics_ 40.2 (2024): btae075.
+The concept of integrating external APIs follows the same approach described in **GeneGPT**:   [Jin, Qiao, et al. _Bioinformatics_ 40.2 (2024): btae075](https://doi.org/10.1093/bioinformatics/btae075).
 
 ---
 
