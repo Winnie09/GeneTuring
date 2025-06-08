@@ -1,94 +1,44 @@
 # GeneTuring
 
-**GeneTuring** is a benchmarking suite and resource for evaluating the genomic reasoning capabilities of large language models (LLMs). This repository contains supplementary materials and tools associated with the manuscript:
+**GeneTuring** is a benchmarking suite for evaluating genomic reasoning in large language models (LLMs). It accompanies the manuscript:
 
-> Shang, X., Ji, Z., and Hou, W.*, 2025. _Benchmarking large language models for genomic knowledge with GeneTuring_. bioRxiv, January 5, 2025.  
-> [https://www.biorxiv.org/content/10.1101/2023.03.11.532238v2](https://www.biorxiv.org/content/10.1101/2023.03.11.532238v2)
+> Shang, X., Ji, Z., and Hou, W.*, 2025. _Benchmarking large language models for genomic knowledge with GeneTuring_. bioRxiv.  
+> 📄 [Read the paper](https://www.biorxiv.org/content/10.1101/2023.03.11.532238v2)
 
 ---
 
 ## 📁 Contents
 
-### 1. GeneTuring Benchmark Q&A Dataset
+### 🔹 1. Benchmark Q&A Dataset
 
-This repository includes a supplementary table with **33,600 Q&A pairs** generated and manually scored across:
+This repo includes a supplementary table with **33,600 Q&A pairs**:  
+`16 genomic modules × 7 LLMs × 3 replicates`
 
-- **16 genomic modules**  
-  - Gene name extraction  
-  - Gene alias  
-  - Gene name conversion  
-  - Gene location  
-  - SNP location  
-  - Gene SNP association  
-  - Protein–coding genes  
-  - Gene disease association  
-  - Gene ontology  
-  - TF regulation  
-  - Human genome DNA alignment  
-  - Multi–species DNA alignment  
-  - Human genome DNA alignment programming  
-  - Multi–species DNA alignment programming  
-  - Amino acid translation  
-  - DNA sequence extraction
+**Modules**: Gene name extraction, Gene alias, Gene name conversion, Gene location, SNP location, Gene–SNP association, Protein–coding genes, Gene–disease association, Gene ontology, TF regulation, Human/Multi-species DNA alignment (basic & programming), Amino acid translation, DNA sequence extraction.
 
-- **7 LLMs (or variants)**  
-  - BioGPT  
-  - BioMedLM  
-  - GPT-3.5  
-  - GPT-4o  
-  - Claude 3.5 Sonnet  
-  - Gemini Advanced  
-  - GPT-4o (web)
-
-- **3 replicates per LLM per module**
-
-This dataset enables granular comparison of model behavior across a wide range of genomic tasks.
+**LLMs (or variants)**: BioGPT, BioMedLM, GPT-3.5, GPT-4o, Claude 3.5 Sonnet, Gemini Advanced, GPT-4o (web)
 
 ---
 
-### 🌟 GPT-s App: Genetic Alignment BLAST
+### 🌟 2. [Genetic Alignment BLAST](https://chatgpt.com/g/g-67c52efdc210819190a9532f264ec9c0-genetic-alignment-blast)
 
-**We developed a GPT-based tool, [Genetic Alignment BLAST](https://chatgpt.com/g/g-67c52efdc210819190a9532f264ec9c0-genetic-alignment-blast), using OpenAI’s GPT Builder platform.**
+A GPT-based tool built using OpenAI’s GPT Builder to showcase **API-driven execution** for sequence alignment. Instead of relying only on training data, the app integrates the **NCBI BLAST API** to:
 
-This app was created to **demonstrate the feasibility of using API-driven execution** to tackle sequence alignment questions more effectively. It can recognize when to call external genomic databases (e.g., the **National Center for Biotechnology Information (NCBI)** database) rather than attempting to generate answers purely from its training data.
+- Accept and submit DNA alignment queries  
+- Retrieve and explain results from the NCBI database  
+- Decide when external tools are needed
 
-To build this GPT, we created an **Action to integrate the NCBI BLAST API**, enabling the GPT to:
-- Submit BLAST queries
-- Check query status
-- Retrieve BLAST results programmatically
-
-
-**What it does**:
-
-It integrates the NCBI BLAST API into a GPT interface. This means it can:
-
-- Accept DNA sequence alignment queries
-
-- Submit them to the NCBI BLAST service
-
-- Retrieve and explain the results
-
-- Decide when to use external APIs instead of relying on internal training data
-
-The concept of integrating external APIs follows the same approach described in **GeneGPT**:   [Jin, Qiao, et al. _Bioinformatics_ 40.2 (2024): btae075](https://doi.org/10.1093/bioinformatics/btae075).
+The design follows the approach of [GeneGPT](https://doi.org/10.1093/bioinformatics/btae075) (Jin et al., 2024).
 
 ---
 
 ## ❓ Questions or Issues
 
-For questions or feedback, please contact:
-
-**Dr. Wenpin Hou**  
-📧 wp.hou3@gmail.com
-
-Or open an issue in this repository.
+Please contact **Dr. Wenpin Hou** at 📧 wp.hou3@gmail.com or open an issue.
 
 ---
 
 ## 📖 Citation
 
-If you use the GeneTuring benchmark or the Genetic Alignment BLAST app, please cite:
-
-> Shang, X., Ji, Z., and Hou, W.*, 2025. _Benchmarking large language models for genomic knowledge with GeneTuring_. bioRxiv, January 5, 2025.  
+> Shang, X., Ji, Z., and Hou, W.*, 2025. _Benchmarking large language models for genomic knowledge with GeneTuring_. bioRxiv.  
 > [https://www.biorxiv.org/content/10.1101/2023.03.11.532238v2](https://www.biorxiv.org/content/10.1101/2023.03.11.532238v2)
-
