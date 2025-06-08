@@ -28,7 +28,7 @@ A GPT-based tool built using OpenAI’s GPT Builder to showcase **API-driven exe
 - Retrieve and explain results from the NCBI database  
 - Decide when external tools are needed
 
-The design follows the approach of [GeneGPT](https://doi.org/10.1093/bioinformatics/btae075) (Jin et al., 2024).
+The primary idea of this design has been demonstrated in [GeneGPT](https://doi.org/10.1093/bioinformatics/btae075) (Jin et al., 2024), but we build it on our own (thanks to Xinyi Shang) to validate this idea.
 
 ---
 
