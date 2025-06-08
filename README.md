@@ -46,17 +46,19 @@ This dataset enables granular comparison of model behavior across a wide range o
 
 ---
 
-### 2. GPT-s App: Genetic Alignment BLAST
+### 🌟 GPT-s App: Genetic Alignment BLAST
 
-This repository also includes a GPT-based application, **Genetic Alignment BLAST**, which demonstrates the feasibility of **API-driven execution** for sequence alignment tasks.
+**We developed a GPT-based tool, [Genetic Alignment BLAST](https://chatgpt.com/g/g-67c52efdc210819190a9532f264ec9c0-genetic-alignment-blast), using OpenAI’s GPT Builder platform.**
 
-The app integrates the **NCBI BLAST API** using GPT Actions. It allows the model to:
-- Recognize when an external database query is needed
-- Submit and track BLAST jobs via NCBI
-- Retrieve and present alignment results programmatically
+This app was created to **demonstrate the feasibility of using API-driven execution** to tackle sequence alignment questions more effectively. It can recognize when to call external genomic databases (e.g., the **National Center for Biotechnology Information (NCBI)** database) rather than attempting to generate answers purely from its training data [Jin et al., 2024](https://doi.org/10.1093/bioinformatics/btae075).
 
-> The concept of integrating NCBI API with LLMs was previously described in  
-> GeneGPT (Jin, Qiao, et al., *Bioinformatics* 40.2 (2024): btae075).
+To build this GPT, we created an **Action to integrate the NCBI BLAST API**, enabling the GPT to:
+- Submit BLAST queries
+- Check query status
+- Retrieve BLAST results programmatically
+
+The concept of integrating external APIs follows the same approach described in **GeneGPT**:  
+Jin, Qiao, et al. _Bioinformatics_ 40.2 (2024): btae075.
 
 ---
 
