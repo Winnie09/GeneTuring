@@ -30,7 +30,7 @@ A GPT-based tool built using OpenAI’s GPT Builder to showcase **API-driven exe
 
 
 This GPT-s app can be accessed here: [link](https://chatgpt.com/g/g-67c52efdc210819190a9532f264ec9c0-seqsnap).
-The primary idea of this design has been demonstrated in [GeneGPT](https://doi.org/10.1093/bioinformatics/btae075) (Jin et al., 2024), but we build it on our own (thanks to Xinyi Shang) to validate this idea.
+The primary idea of this design has been demonstrated in [GeneGPT](https://doi.org/10.1093/bioinformatics/btae075) (Jin et al., 2024), but we build it on our own based on the more advanced GPT-4o model (thanks to Xinyi Shang) to validate this idea.
 
 ---
 
