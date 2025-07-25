@@ -11,6 +11,27 @@ Original GeneGPT was using code-davinci model from OpenAI, but now it is depreca
 
 This GeneGPT implementation was specifically adapted for the GeneTuring benchmarking suite to evaluate genomic reasoning capabilities across multiple tasks.
 
+## Usage
+
+The main implementation is provided in `demo_GeneGPT.ipynb` notebook. To use the implementation:
+
+### Setup
+1. **Configure OpenAI API Key:**
+   ```python
+   client = openai.OpenAI(api_key='YOUR_KEY') # Please put your OpenAI key here
+   ```
+
+2. **Select Model Variant:**
+   ```python
+   str_mask = '111111' # full model is 111111, slim model is 001001
+   ```
+
+### Key Components:
+- **String Mask System**: Six-digit binary string controls which in-context learning components are used (Dc.1-2, Dm.1-4)
+- **Prompt Engineering**: Uses `get_prompt_header()` function to generate appropriate prompts based on selected components
+- **Batch Processing**: Processes questions from `Q&A_dataset.csv` across multiple genomic modules
+- **API Management**: Includes safe API calling with proper error handling and rate limiting
+- 
 ## Reference
 
-Jin, Q., Yang, Y., Chen, Q., & Lu, Z. (2024). Genegpt: Augmenting large language models with domain tools for improved access to biomedical information. *Bioinformatics*, 40(2), btae075.
+> Jin, Q., Yang, Y., Chen, Q., & Lu, Z. (2024). Genegpt: Augmenting large language models with domain tools for improved access to biomedical information. *Bioinformatics*, 40(2), btae075.
