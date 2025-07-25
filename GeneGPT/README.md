@@ -31,7 +31,7 @@ The main implementation is provided in `demo_GeneGPT.ipynb` notebook. To use the
 - **Prompt Engineering**: Uses `get_prompt_header()` function to generate appropriate prompts based on selected components
 - **Batch Processing**: Processes questions from `Q&A_dataset.csv` across multiple genomic modules
 - **API Management**: Includes safe API calling with proper error handling and rate limiting
-- 
+  
 ## Reference
 
 > Jin, Q., Yang, Y., Chen, Q., & Lu, Z. (2024). Genegpt: Augmenting large language models with domain tools for improved access to biomedical information. *Bioinformatics*, 40(2), btae075.
