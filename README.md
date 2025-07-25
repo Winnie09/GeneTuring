@@ -12,11 +12,11 @@
 ### 🔹 1. Benchmark Q&A Dataset
 
 This repo includes a supplementary table with **48,303 Q&A pairs**:  
-`16 genomic modules × 7 LLMs × 3 replicates`
+`16 genomic modules × 10 LLMs × 3 replicates`
 
 **16 Modules**: Gene name extraction, Gene alias, Gene name conversion, Gene location, SNP location, Gene–SNP association, Protein–coding genes, Gene–disease association, Gene ontology, TF regulation, Human/Multi-species DNA alignment (basic & programming), Amino acid translation, DNA sequence extraction.
 
-** 10 LLM settings**: BioGPT, BioMedLM, GPT-3.5, GPT-4o, Claude 3.5 Sonnet, Gemini Advanced, GPT-4o (web), GeneGPT (slim), GeneGPT (full), SeqSnap
+**10 LLM settings**: BioGPT, BioMedLM, GPT-3.5, GPT-4o, Claude 3.5 Sonnet, Gemini Advanced, GPT-4o (web), GeneGPT (slim), GeneGPT (full), SeqSnap
 
 ---
 
