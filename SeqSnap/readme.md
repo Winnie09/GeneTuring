@@ -10,7 +10,32 @@ You can access the GPTs version of SeqSnap via the following link:
 
 > **Note:** For the BLAST task, running BLAST may take a few minutes. If no output is returned initially, please wait and ask the model again to fetch the top result.
 
-![example of blast](seqsnap_humanAlignment_example.png)
+#### Example: SNP
+
+##### Gene SNP Association
+
+![example of snp](example/seqsnap_snpgene_example.png)
+
+##### SNP location
+
+![example of snp](example/seqsnap_snplocation_example.png)
+
+#### Example: Alignment
+
+##### Human Genome
+![example of blast](example/seqsnap_humanAlignment_example.png)
+
+##### Multi Species
+![example of blast](example/seqsnap_multispeciesAlignment_example.png)
+
+#### Gene Name Extraction
+
+![example of name](example/seqsnap_nameextration_example.png)
+
+#### Gene Alias
+
+![example of alias](example/seqsnap_genealias_example.png)
+
 
 ## API Version
 
