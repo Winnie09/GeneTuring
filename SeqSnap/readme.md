@@ -10,6 +10,8 @@ You can access the GPTs version of SeqSnap via the following link:
 
 > **Note:** For the BLAST task, running BLAST may take a few minutes. If no output is returned initially, please wait and ask the model again to fetch the top result.
 
+![example of blast](seqsnap_humanAlignment_example.png)
+
 ## API Version
 
 An API-based version of SeqSnap is provided as a Jupyter Notebook. To use it, you'll need your own OpenAI GPT API key.
